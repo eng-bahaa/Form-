@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="#"><img src="/images/logo.png" alt="Logo"></a>
+        </header>
+        <main>
+            <h1>Contact Us Tody!</h1>
+            <!-- Don't forget form will not work locally -->
+            <form action="formhandler.php" method="post">
+                <fieldset>
+                    <legend>Contact Bahaeldin</legend>
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" name="name">
+
+                    <label for="">Gender</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="gender" value="female"> Female
+                        </li>
+                        <li>
+                            <input type="radio" name="gender" value="male"> Male
+                        </li>
+                        <li>
+                            <input type="radio" name="gender" value="other"> Other
+                        </li>
+                    </ul>
+
+                    <label for="">Favorite Wines</label>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="wines[]" value="cab"> Cabernet
+                        </li>
+                        <li>
+                            <input type="checkbox" name="wines[]" value="merlot"> Merlot
+                        </li>
+                        <li>
+                            <input type="checkbox" name="wines[]" value="malbec"> Malbec
+                        </li>
+                        <li>
+                            <input type="checkbox" name="wines[]" value="syrah"> Syrah
+                        </li>
+                    </ul>
+                    <label for="">Regions</label>
+                    <select name="regions" id="">
+                        <option value="">select one</option>
+                        <option value="nw">Northwest</option>
+                        <option value="sw">South West</option>
+                        <option value="mw">Midwest</option>
+                        <option value="ne">Northeast</option>
+                        <option value="so">South</option>
+                    </select>
+                    <label for="">Comments</label>
+                    <textarea name="comments" id=""></textarea>
+                    <input type="submit" name="submit" value="Sent it">
+                    <span><a href="">Reset</a></span>
+                </fieldset>
+            </form>
+        </main>
+        <aside>
+            <h3>This is my wonderful aside</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat est magni praesentium deserunt
+                voluptate provident accusamus ex voluptatum error beatae, ipsa nisi exercitationem nihil quis corrupti
+                reiciendis optio. Aut.
+
+            </p>
+            <img src="/images/aside-image.png" alt="asside-image">
+        </aside>
+        <footer>
+            <ul>
+                <li>Copyright &copy;2026</li>
+                <li>All Rights Reserved</li>
+                <li><a href="">Web Design by Bahaeldin</a></li>
+                <li><a href="">HTML Valid!</a></li>
+                <li><a href="https://assignments.mystudentswa.com/bahaeldinah/it161/index.html">My Portal Page </a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
